@@ -1,0 +1,261 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 HelveticaNeue-Medium;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\froman\fcharset0 Times-Italic;\f5\fnil\fcharset0 HelveticaNeue-Bold;
+\f6\fnil\fcharset0 HelveticaNeue-Italic;\f7\fnil\fcharset0 Georgia-Bold;\f8\fswiss\fcharset0 Helvetica;
+\f9\fmodern\fcharset0 Courier;\f10\fnil\fcharset0 Georgia;\f11\fswiss\fcharset0 ArialMT;
+\f12\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red34\green34\blue34;\red251\green2\blue7;
+\red25\green28\blue31;\red255\green255\blue255;\red30\green83\blue135;\red202\green23\blue113;\red245\green245\blue245;
+\red155\green162\blue177;\red30\green33\blue39;\red223\green180\blue104;\red74\green80\blue93;\red197\green136\blue83;
+\red136\green185\blue102;\red251\green251\blue249;\red61\green52\blue46;\red38\green38\blue38;\red234\green234\blue234;
+\red85\green142\blue40;\red63\green105\blue30;\red0\green0\blue0;\red63\green127\blue95;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c0\c0;\csgenericrgb\c13333\c13333\c13333;\cssrgb\c100000\c14913\c0;
+\cssrgb\c12941\c14510\c16078;\cssrgb\c100000\c100000\c100000;\cssrgb\c14510\c40392\c60000;\cssrgb\c83922\c20000\c51765;\cssrgb\c96863\c96863\c96863;
+\cssrgb\c67059\c69804\c74902;\cssrgb\c15686\c17255\c20392;\cssrgb\c90196\c75294\c48235;\cssrgb\c36078\c38824\c43922;\cssrgb\c81961\c60392\c40000;
+\cssrgb\c59608\c76471\c47451;\cssrgb\c98824\c98824\c98039;\cssrgb\c30588\c26667\c23529;\cssrgb\c20000\c20000\c20000;\cssrgb\c93333\c93333\c93333;
+\cssrgb\c39975\c61335\c20601;\cssrgb\c30831\c47797\c15540;\cssrgb\c0\c0\c0;\csgenericrgb\c24706\c49804\c37255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\info
+{\author rahul shetty}}\margl1440\margr1440\vieww38200\viewh18740\viewkind0
+\deftab720
+\pard\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf2 Setting JAVA_HOME path in MAC OS X\
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf3 \'a0\
+\'a0\
+vim ~/.bash_profile\
+\'a0\
+export JAVA_HOME=$(/usr/libexec/java_home)\
+Hit Esc and then :wq\'a0 and then ENTER\
+\'a0\
+source ~/.bash_profile\
+\'a0\
+echo $JAVA_HOME\
+\
+\cf4 Setting MAVEN_HOME path in Mac OSX\cf3 \
+
+\fs48 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \
+\pard\pardeftab720\sl560\sa120\partightenfactor0
+
+\f2 \cf5 \cb6 \expnd0\expndtw0\kerning0
+Install Maven Manually\cb1 \uc0\u8232 \cb6 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs32 \cf5 I2.1 Download the\'a0{\field{\*\fldinst{HYPERLINK "https://maven.apache.org/download.cgi"}}{\fldrslt \cf7 \ul \ulc7 Maven}}, for example\'a0
+\fs28 \cf8 \uc0\u8237 apache-maven-3.6.3-bin.tar.gz
+\fs32 \cf5 \uc0\u8236 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf5 \cb9 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf5 \cb6 \
+2.2 The below command extracts the downloaded\'a0
+\fs28 \cf8 \uc0\u8237 .tar.gz
+\fs32 \cf5 \uc0\u8236 \'a0file to the current user\'92s home directory\'a0
+\fs28 \cf8 \uc0\u8237 ~
+\fs32 \cf5 \uc0\u8236 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \cb11 Terminal
+\f0\fs21 \
+% \cf12 pwd\cf10 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\i \cf13 # In this example, the $\{username\} is mkyong
+\f0\i0 \cf10 \
+/Users/\cf14 $\{username\}\cf10 /Downloads\
+\
+% tar -xvzf apache-maven-3.6.3-bin.tar.gz -C ~        \
+\
+x apache-maven-3.6.3/README.txt\
+x apache-maven-3.6.3/LICENSE\
+x apache-maven-3.6.3/NOTICE\
+x apache-maven-3.6.3/lib/\
+
+\f4\i \cf13 #...
+\f0\i0 \cf10 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs32 \cf5 \cb6 2.3 Now, the Maven folder is at this path\'a0
+\fs28 \cf8 \uc0\u8237 /Users/mkyong/apache-maven-3.6.3
+\fs32 \cf5 \uc0\u8236 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \cb11 Terminal
+\f0\fs21 \
+% ls -lsa ~/apache-maven-3.6.3\
+\
+total 64\
+0 drwxr-xr-x   9 mkyong  staff    288 Jan 14 11:08 .\
+0 drwxr-xr-x+ 29 mkyong  staff    928 Jan 14 11:08 ..\
+40 -rw-r--r--   1 mkyong  staff  17504 Nov  7  2019 LICENSE\
+16 -rw-r--r--   1 mkyong  staff   5141 Nov  7  2019 NOTICE\
+8 -rw-r--r--   1 mkyong  staff   2612 Nov  7  2019 README.txt\
+0 drwxr-xr-x   8 mkyong  staff    256 Jan 14 11:08 bin\
+0 drwxr-xr-x   4 mkyong  staff    128 Nov  7  2019 boot\
+0 drwxr-xr-x   5 mkyong  staff    160 Nov  7  2019 conf\
+0 drwxr-xr-x  65 mkyong  staff   2080 Nov  7  2019 lib\
+\
+% \cf12 cd\cf10  ~/apache-maven-3.6.3\
+% \cf12 pwd\cf10 \
+/Users/mkyong/apache-maven-3.6.3\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs32 \cf5 \cb6 2.4 On macOS 10.5 Catalina or later, the\'a0{\field{\*\fldinst{HYPERLINK "https://www.theverge.com/2019/6/4/18651872/apple-macos-catalina-zsh-bash-shell-replacement-features"}}{\fldrslt \cf7 \ul \ulc7 default shell is zsh}}, and we can create the environment variables\'a0
+\fs28 \cf8 \uc0\u8237 MAVEN_HOME
+\fs32 \cf5 \uc0\u8236 \'a0and update the\'a0
+\fs28 \cf8 \uc0\u8237 PATH
+\fs32 \cf5 \uc0\u8236 \'a0in\'a0
+\fs28 \cf8 \uc0\u8237 ~/.zshenv
+\fs32 \cf5 \uc0\u8236 .\
+Open the\'a0
+\fs28 \cf8 \uc0\u8237 ~/.zshenv
+\fs32 \cf5 \uc0\u8236 \'a0and append the following content.\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \cb11 ~/.zshenv
+\f0\fs21 \
+\cf12 export\cf10  MAVEN_HOME=~/apache-maven-3.6.3\
+\cf12 export\cf10  PATH=\cf14 $PATH\cf10 :\cf14 $MAVEN_HOME\cf10 /bin\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f5\b\fs32 \cf5 \cb6 Note
+\f1\b0 \cb1 \uc0\u8232 \cb6 For macOS 10.14 Mojave and before, the default Terminal shell is\'a0
+\fs28 \cf8 \uc0\u8237 bash
+\fs32 \cf5 \uc0\u8236 , and we can create the environment variables in\'a0
+\fs28 \cf8 \uc0\u8237 ~/.bash_profile
+\fs32 \cf5 \uc0\u8236 .\
+Open the\'a0
+\fs28 \cf8 \uc0\u8237 ~/.bash_profile
+\fs32 \cf5 \uc0\u8236 \'a0and append the following content.\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \cb11 ~/.bash_profile
+\f0\fs21 \
+\cf12 export\cf10  MAVEN_HOME=~/apache-maven-3.6.3\
+\cf12 export\cf10  PATH=\cf14 $PATH\cf10 :\cf14 $MAVEN_HOME\cf10 /bin\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f6\i\fs32 \cf5 \cb6 P.S Read this\'a0{\field{\*\fldinst{HYPERLINK "http://zsh.sourceforge.net/Intro/intro_3.html"}}{\fldrslt \cf7 \ul \ulc7 Zsh Startup Files}}.
+\f1\i0 \
+2.5 Source the\'a0
+\fs28 \cf8 \uc0\u8237 ~/.zshenv
+\fs32 \cf5 \uc0\u8236 \'a0to reflect the changes.\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \cb11 Terminal
+\f0\fs21 \
+% \cf12 source\cf10  ~/.zshenv\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs32 \cf5 \cb6 2.6 Verification.\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \cb11 Terminal
+\f0\fs21 \
+% mvn -version\
+\
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)\
+Maven home: /Users/mkyong/apache-maven-3.6.3\
+Java version: 14, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-14.jdk/Contents/Home\
+Default locale: en_MY, platform encoding: UTF-8\
+OS name: \cf15 "mac os x"\cf10 , version: \cf15 "10.16"\cf10 , arch: \cf15 "x86_64"\cf10 , family: \cf15 "mac"\cf10 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs32 \cf5 \cb6 Done.\
+\
+\
+\pard\pardeftab720\sl660\partightenfactor0
+
+\f7\b\fs48 \cf4 \cb16 Installing GIT on macOS
+\fs32 \cf17 \
+\pard\pardeftab720\sl440\sa220\partightenfactor0
+
+\f8\b0\fs28 \cf17 There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run\'a0
+\f9 \cf18 \cb19 git
+\f8 \cf17 \cb16 \'a0from the Terminal the very first time.\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f9\fs25\fsmilli12600 \cf18 \cb19 $ git --version\
+\pard\pardeftab720\sl440\sa220\partightenfactor0
+
+\f8\fs28 \cf17 \cb16 If you don\'92t have it installed already, it will prompt you to install it.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f10 \cf17 \cb16 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs32 \cf5 \cb6 \
+\
+<input \cf4 type\cf5 ="\cf20 text\cf5 " \cf4 placeholder\cf5 ="\cf20 Username\cf5 " \cf4 id\cf5 ="\cf21 inputUsername\cf5 " \cf4 value\cf5 ="">\
+\
+Input->Tagname\
+Red->attribute\
+Green->attribute associated value.\
+\pard\pardeftab720\partightenfactor0
+
+\f11\fs36 \cf22 \kerning1\expnd0\expndtw0  * ID\
+   XPath :\
+\
+		//tagname[@attribute=\'91value\'92]\
+\
+		(//tagname[@attribute=\'91value\'92])[nthindex]\
+\
+		//parenttagename/childtagname\
+\
+		//parenttagname[@attribute=\'91value\'92] //childtagname[@attribute=\'91value\'92]\
+\
+\
+		//tagname[contains(@class,\'92partial value\'92)]\
+\
+		//parenttagname[@attribute=\'91value\'92]/childtagname[nthindex]\
+\
+		//tagname[text()=\'91value\'92]\
+\
+\
+\
+Console; $x(\'91Xpathexpression\'92)\
+e.g $x(\'91//tagname[@atrribute=\'93Value\'94]\'92)\
+\
+    \
+\pard\pardeftab720\partightenfactor0
+\cf22 \ul \ulc22 Css\ulnone  Selector \
+    		\
+    			if \ul Classname\ulnone :   tagname.classname\
+    			if id :                 \ul tagname\ulnone #id\
+\
+    			if no \ul classname\ulnone  or id then : \ul tagname\ulnone [attribute='value']\
+\
+			tagname[attribute=\'91value\'92]:nth -child(index)\
+			parenttagname<space>childtagname\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf22 {\listtext	
+\f12 \uc0\u8259 
+\f11 	}	tagname[attribute*=\'91partial value\'92]\
+\pard\pardeftab720\partightenfactor0
+\cf22 \
+\
+    Console: $(\'92CSSSELECTOR EXPRESSION\'92) \
+e.g $(\'91tagname[attribute=\'93value\'94]\'92)			\
+    		\
+name\
+Class Name\
+Tag Name\
+Link Text\
+Partial Link text\
+    		
+\f8\fs24 \cf0 \
+\cf23     */
+\f1\fs32 \cf5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf5 \
+\
+}
